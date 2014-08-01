@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atributes</title>
+</head>
+<body>
+	<h1>Example - Autocomplete</h1>
+	<form action="Example" autocomplete="on">
+  Nombre:   <input type="text" name="nombre"><br>
+  Apellido: <input type="text" name="apellido"><br>
+  E-mail:   <input type="email" name="email" autocomplete="off"><br>
+            <input type="submit">
+    </form>
+    <h1>Example - Novalidate</h1>
+    <form action="demo_form.asp" novalidate>
+E-mail: <input type="email" name="user_email">
+        <input type="submit">
+    </form>
+    <h1>Example - Autofocus</h1>
+    <form action="demo_form.asp">
+  Nombre:   <input type="text" name="nombre" autofocus><br>
+  Apellido: <input type="text" name="apellido"><br>
+            <input type="submit">
+    </form>
+    <h1>Example - Form</h1>
+    <form action="demo_form.asp" id="form1">
+Nombre: <input type="text" name="fname"><br>
+        <input type="submit" value="Submit">
+    </form>
+Apellido: <input type="text" name="lname" form="form1">
+    <h1>Example - Formaction</h1>
+    <form action="demo_form.asp">
+Nombre:   <input type="text" name="nombre"><br>
+Apellido: <input type="text" name="apellido"><br>
+          <input type="submit" value="Submit"><br>
+          <input type="submit" formaction="demo_admin.asp" value="presentar como usuario">
+    </form>
+    <h1>Example - Formenctype</h1>
+    <form action="demo_post_enctype.asp" method="post">
+Nombre: <input type="text" name="Nombre"><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data" value="presentar como multipart/form-data">
+    </form>
+    <h1>Example - Formmethod</h1>
+    <form action="demo_form.asp" method="get">
+Nombre:   <input type="text" name="nombre"><br>
+Apellido: <input type="text" name="apellido"><br>
+          <input type="submit" value="Submit">
+          <input type="submit" formmethod="post" formaction="demo_post.asp" value="entrar usando POST">
+    </form>
+    <h1>Example - formnovalidate</h1>
+    <form action="demo_form.asp">
+ E-mail: <input type="email" name="id usuario"><br>
+         <input type="submit" value="Submit"><br>
+         <input type="submit" formnovalidate="formnovalidate" value="enviar sin validacion">
+    </form>
+    <h1>Example - Formtarget</h1>
+    <form action="demo_form.asp">
+Nombre:   <input type="text" name="nombre"><br>
+Apellido: <input type="text" name="apellido"><br>
+          <input type="submit" value="presentar de forma normal">
+          <input type="submit" formtarget="_blank" value="presentar en una nueva ventana">
+    </form>
+    <h1>Example - Height/Widht</h1>
+    <form action="demo_form.asp">
+Nombre:   <input type="text" name="nombre"><br>
+Apellido: <input type="text" name="apellido"><br>
+          <input type="image" src="imgs/dota2.png" alt="Submit" width="48" height="48">
+    </form>
+    <h1>Example - List</h1>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Google Chrome">
+      <option value="Opera">
+      <option value="Safari">
+   </datalist>
+   <h1>Example - Min </h1>
+   <form action="demo_form.asp">
+     Introduzca una fecha antes de 1980-01-01:
+     <input type="date" name="bday" max="1979-12-31">
+     Introduzca una fecha despues de 2000-01-01:
+     <input type="date" name="bday" min="2000-01-02">
+     Cantidad (entre 1 y 5):
+     <input type="number" name="quantity" min="1" max="5">
+     <input type="submit">
+   </form>
+   <h1>Example - Max</h1>
+   <form action="demo_form.asp">
+     Introduzca una fecha antes de 1980-01-01:
+     <input type="date" name="bday" max="1979-12-31">
+     Introduzca una fecha despues de 2000-01-01:
+     <input type="date" name="bday" min="2000-01-02">
+     Cantidad (entre 1 y 5):
+     <input type="number" name="quantity" min="1" max="5">
+     <input type="submit">
+   </form>
+   <h1>Example - Multiple</h1>
+   <form action="demo_form.asp">
+     Seleccionar imagenes: <input type="file" name="img" multiple>
+     <input type="submit">
+   </form>
+   <h1>Example - Placeholder</h1>
+   <form action="demo_form.asp">
+     <input type="text" name="fname" placeholder="Nombre"><br>
+     <input type="text" name="lname" placeholder="Apellido"><br>
+     <input type="submit" value="presentar">
+   </form> 
+   <h1>Example - Required</h1>
+   <form action="demo_form.asp">
+Username: <input type="text" name="nombre de usuario" required>
+          <input type="submit">
+   </form>
+   <h1>Example - Step</h1>
+   <form action="demo_form.asp">
+     <input type="number" name="points" step="3">
+     <input type="submit">
+   </form>
+</body>
+</html>

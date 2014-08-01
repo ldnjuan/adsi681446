@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos lementos de entrada (html5)</title>
+</head>
+<body>
+	<h1>Nuevos lementos de entrada (html5)</h1>
+	<form method="get" oninput="salida.value=parseInt(base.value)*parseInt(altura.value)">
+	 <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	 <fieldset>
+	 	<legend>Lista de datos</legend>
+	 	<input list="lenguajes"/>
+	 	<datalist id="lenguajes">
+	 	  <option value="C++">C++</option>
+	 	  <option value="Java">Java</option>
+	 	  <option value="PHP">PHP</option>
+	 	  <option value="C#">C#</option>
+	 	  <option value="Python">Python</option>
+	 	</datalist>  
+	 </fieldset>
+	 	 <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	 <fieldset>
+	 	<legend>Generador de claves</legend>
+	 	  <keygen name="clave"/>
+	 </fieldset>
+	 	 <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	  <fieldset>
+	 	<legend>salida</legend>
+	 	<label for="base"><strong>Base:</strong></label>
+	 	<input type="range" id="base" min="1" max="100"/>
+	 	<label for="altura"><strong>Altura:</strong></label>
+	 	<input type="range" id="altura" min="1" max="100"/>
+	 	<label for="salida">El area es:</label>
+	 	 <output id="salida" for="base altura"></output>
+	 </fieldset>		
+	</form>
+</body>
+</html>

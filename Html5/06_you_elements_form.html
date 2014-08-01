@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>your Elements Form</title>
+</head>
+<body>
+   <h1>example - Datalist</h1>
+	<input type="text" list="nombres">
+    <datalist id="nombres">
+      <option value="larry"></option>
+      <option value="lucas"></option>
+      <option value="adrian"></option>
+      <option value="alberto"></option>
+      <option value="andres"></option>
+      <option value="camila"></option>
+      <option value="carlos"></option>
+      <option value="samuel"></option>
+      <option value="sergio"></option>
+    </datalist>
+    <h1>Example - Keygen</h1>
+    <form action="enviar.php" method="get">
+      <keygen keytype="dsa" name="clave">
+      <input type="submit" value="Enviar">
+    </form>
+    <h1>Example - Output</h1>
+    <form name="division" onsubmit="return false" oninput="cociente.value = parseInt(dividendo.value) / parseInt(divisor.value)">
+    <input id="dividendo" type="number" step="any"> :
+    <input id="divisor" type="number" step ="any"> =
+    <output name="cociente" for="dividendo divisor">
+    </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tipos de elemneto de entrada html5</title>
+</head>
+<body>
+ <h1>Tipos de elemneto de entrada html5</h1>
+ <form method="post">
+ <fieldset>
+     <legend>color</legend>
+     <input type="color" id="pcolor" oninput ="ocolor.value=this.value"/>
+     <output id="ocolor" for="pcolor"></output>
+ </fieldset>
+ <fieldset>
+     <legend>fecha</legend>
+     <input type="date"/>
+ </fieldset>
+ <fieldset>
+     <legend>Correo Electronio</legend>
+     <input type="email" required/>
+ </fieldset>
+ <fieldset>
+     <legend>Mes</legend>
+     <input type="month"/>
+ </fieldset>
+ <fieldset>
+     <legend>Numeros</legend>
+     <input type="number" min="0" max="100"/>
+ </fieldset>
+ <fieldset>
+     <legend>Rango</legend>
+     <input type="range" min="1" max="50" step="5" id="rango" oninput="orango.value=this.value" />
+     <output id="orango" for="rango"></output>
+ </fieldset>
+ <fieldset>
+     <legend>Buscar</legend>
+     <input type="search"/>
+ </fieldset>
+ <fieldset>
+     <legend>Tiempor</legend>
+     <input type="time"/>
+ </fieldset>
+ <fieldset>
+     <legend>URL</legend>
+     <input type="url" required/>
+ </fieldset>
+ <fieldset>
+     <legend>Semana</legend>
+     <input type="week"/>
+ </fieldset>
+ <br/><br/>
+ <input type="submit" value="Enviar"/> 
+ </form>                                             	
+</body>
+</html>
